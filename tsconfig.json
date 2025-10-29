@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": ["DOM", "ESNext"],
+		// "moduleDetection": "auto",
+
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+
+		// "allowJs": true,
+
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+
+		"strict": true,
+		"noImplicitAny": true,
+		"allowUnreachableCode": true,
+
+		"skipLibCheck": true
+	}
+}
