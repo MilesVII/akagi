@@ -3,14 +3,47 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=1;"/>
-		<title>Akashi</title>
-		<link rel="icon" href="/favicon.png" />
+		<title>akashi</title>
+		<link rel="icon" href="favicon.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..500&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="styles.css"/>
+		<style>
+			:root {
+				color-scheme: dark;
+			}
+
+			body {
+				max-width: 320px;
+				font-family: Roboto, sans-serif;
+				font-size: 18px;
+				display: flex;
+				flex-flow: column nowrap;
+				gap: 12px;
+				place-items: stretch;
+				margin: 32px auto;
+			}
+
+			summary, button {
+				cursor: pointer;
+			}
+
+			output {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+			}
+		</style>
 		<script type="module" src="index.js"></script>
 	</head>
 	<body>
+		<details>
+			<summary>options</summary>
+			<div>syllables</div>
+			<textarea id="i-syllist" rows="12"></textarea>
+			<div>syllable count</div>
+			<input type="text" id="i-sylcount"></input>
+		</details>
+		<button id="i-run">run</button>
+		<output></output>
 	</body>
 </html>

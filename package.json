@@ -3,10 +3,9 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"deploy": "npm run build && wrangler deploy",
 		"build": "esbuild src/page/index.ts --bundle --sourcemap --outfile=page/index.js",
 		"watch": "esbuild src/page/index.ts --bundle --sourcemap --watch --outfile=page/index.js",
-		"dev": "concurrently \"npm run watch\" \"serve\""
+		"dev": "serve"
 	},
 	"devDependencies": {
 		"concurrently": "^9.2.1",
